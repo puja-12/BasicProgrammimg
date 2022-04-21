@@ -12,7 +12,7 @@ namespace Basicprogramming
             while (true)
             {
                 Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) " +
-                    "MaxOfThreeNumbers\n6) Quotient and remainder\n7 VowelsOrConsonent\n");
+                    "MaxOfThreeNumbers\n6) Quotient and remainder\n7 VowelsOrConsonent\n8 PowerOf2\n ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -44,6 +44,11 @@ namespace Basicprogramming
                         Uc7 test = new Uc7();
                         test.vowels();
                         break;
+                    case 8:
+                        Uc8cs power = new Uc8cs();
+                        power.PowerOf2();
+                        break;
+
 
                 }
 
