@@ -11,7 +11,7 @@ namespace Basicprogramming
 
             while (true)
             {
-                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n");
+                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) MaxOfThreeNumbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +30,10 @@ namespace Basicprogramming
                     case 4:
                         Uc4 harmonic = new Uc4();
                         harmonic.Harmonic();
+                        break;
+                    case 5:
+                        Uc5 maxofthree = new Uc5();
+                        maxofthree.maxOfThree();
                         break;
 
                 }
