@@ -1,28 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace check1
+public class Vowels
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        char ch;
+
+        Console.WriteLine("Enter any character: ");
+        ch = Convert.ToChar(Console.ReadLine());
+
+
+        // Condition for vowel checking
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
         {
-            int i;
-            Console.Write("Enter a Number : ");
-            i = int.Parse(Console.ReadLine());
-            if (i % 2 == 0)
-            {
-                Console.Write("Entered Number is an Even Number");
-                Console.Read();
-            }
-            else
-            {
-                Console.Write("Entered Number is an Odd Number");
-                Console.Read();
-            }
+
+            Console.WriteLine(ch + " is Vowel.");
+
         }
+        else
+        {
+            Console.WriteLine(ch + " is Consonant.");
+        }
+
+        Console.ReadLine();
     }
 }
