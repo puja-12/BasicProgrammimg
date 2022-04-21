@@ -11,7 +11,7 @@ namespace Basicprogramming
 
             while (true)
             {
-                Console.WriteLine("select number\n1)Leap year\n2)even odd\n");
+                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +22,10 @@ namespace Basicprogramming
                     case 2:
                         Uc2 evenodd = new Uc2();
                         evenodd.evenOdd();
+                        break;
+                    case 3:
+                        uc3 swap = new uc3();
+                        swap.SwapExample();
                         break;
                 }
 
