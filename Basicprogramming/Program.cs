@@ -11,7 +11,8 @@ namespace Basicprogramming
 
             while (true)
             {
-                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) MaxOfThreeNumbers\n6) Quotient and remainder\n");
+                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) " +
+                    "MaxOfThreeNumbers\n6) Quotient and remainder\n7 VowelsOrConsonent\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,6 +39,10 @@ namespace Basicprogramming
                     case 6:
                         Uc6 quotient = new Uc6();
                         quotient.QuotientRemainder();
+                        break;
+                    case 7:
+                        Uc7 test = new Uc7();
+                        test.vowels();
                         break;
 
                 }
