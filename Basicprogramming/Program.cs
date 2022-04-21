@@ -11,7 +11,7 @@ namespace Basicprogramming
 
             while (true)
             {
-                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) MaxOfThreeNumbers");
+                Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) MaxOfThreeNumbers\n6) Quotient and remainder\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -34,6 +34,10 @@ namespace Basicprogramming
                     case 5:
                         Uc5 maxofthree = new Uc5();
                         maxofthree.maxOfThree();
+                        break;
+                    case 6:
+                        Uc6 quotient = new Uc6();
+                        quotient.QuotientRemainder();
                         break;
 
                 }
