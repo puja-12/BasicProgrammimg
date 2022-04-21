@@ -12,7 +12,7 @@ namespace Basicprogramming
             while (true)
             {
                 Console.WriteLine("select number\n1)Leap year\n2)even odd\n3) swap\n4) Harmonic\n5) " +
-                    "MaxOfThreeNumbers\n6) Quotient and remainder\n7 VowelsOrConsonent\n8 PowerOf2\n ");
+                    "MaxOfThreeNumbers\n6) Quotient and remainder\n7 VowelsOrConsonent\n8 PowerOf2\n9 Flipcoin\n ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -47,6 +47,10 @@ namespace Basicprogramming
                     case 8:
                         Uc8cs power = new Uc8cs();
                         power.PowerOf2();
+                        break;
+                    case 9:
+                        Uc9 flipcoin = new Uc9();
+                        flipcoin.flipCoin();
                         break;
 
 
